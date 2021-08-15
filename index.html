@@ -96,7 +96,6 @@
       
           <label for="email">Email Address</label>
           <input type="text" id="email" name="email" placeholder="Your last name.." required>
-      
           <label for="address">Physical Address</label>
           <input type="text" id="address" name="address" placeholder="Your Physical Address.." required>
 
@@ -108,23 +107,28 @@
             <option value="Calgary">Calgary</option>
           </select>
 
-          <label for="postal_code">Email Address</label>
+          <label for="postal_code">Postal Code</label>
           <input type="text" id="postal_code" name="postal_code" placeholder="Your postal code.." required>
+
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" placeholder="Date.." required>
+          <br>
 
           <label for="subject">Subject</label>
           <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-          <br>
-          <input type="radio" id="Question" name="fav_language" onchange="hideValue(this)" value="Question">
+          <br><br>
+          
+          <input type="radio" id="Question" name="option" value="Question">
           <label for="Question">Question</label><br>
-          <input type="radio" id="Comment" name="fav_language" onchange="hideValue(this)" value="Comment">
+          <input type="radio" id="Comment" name="option"  value="Comment">
           <label for="Comment">Comment</label><br>
-          <input type="radio" id="Hiring" name="fav_language" onchange="getValue(this)" value="Hiring">
+          <input type="radio" id="Hiring" name="option" onchange="getValue(this)" value="Hiring">
           <label for="Hiring">Hiring</label>
           <br>
-          <tr style="visibility:hidden ;" id="rate">
-            <td><label for="hourlyRate"> Hourly rate:</label></td>
-            <td><input id="hourlyRate" name="hourlyRate" type="number"></td>
-        </tr>
+          <div class="vis" id="rate">
+            <label for="hourlyRate"> Hourly rate:</label>
+            <input id="hourlyRate" name="hourlyRate" type="number">
+          </div>
         <br><br>
           <input type="submit" value="Submit">
       
@@ -133,6 +137,6 @@
       
     </section>
   </main>
-  <script src="main.js"></script>
+  <script src="src\js\main.js"></script>
 </body>
 </html>
