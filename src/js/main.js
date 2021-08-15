@@ -1,4 +1,4 @@
-
+// function
 function getValue(val) {
     debugger;
     if (val.value == "Hiring") {
