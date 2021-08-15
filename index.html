@@ -89,7 +89,7 @@
     <section class="s4">
       <h3 class="center">Contact me</h3>
       <div class="container">
-        <form action="src\js\main.js" method="POST">
+        <form action=" https://httpbin.org/post" method="POST">
       
           <label for="name">Name</label>
           <input type="text" id="name" name="fullname" placeholder="Your name.." required>
@@ -107,10 +107,25 @@
             <option value="Vancouver">Vancouver</option>
             <option value="Calgary">Calgary</option>
           </select>
-      
+
+          <label for="postal_code">Email Address</label>
+          <input type="text" id="postal_code" name="postal_code" placeholder="Your postal code.." required>
+
           <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
-      
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          <br>
+          <input type="radio" id="Question" name="fav_language" onchange="hideValue(this)" value="Question">
+          <label for="Question">Question</label><br>
+          <input type="radio" id="Comment" name="fav_language" onchange="hideValue(this)" value="Comment">
+          <label for="Comment">Comment</label><br>
+          <input type="radio" id="Hiring" name="fav_language" onchange="getValue(this)" value="Hiring">
+          <label for="Hiring">Hiring</label>
+          <br>
+          <tr style="visibility:hidden ;" id="rate">
+            <td><label for="hourlyRate"> Hourly rate:</label></td>
+            <td><input id="hourlyRate" name="hourlyRate" type="number"></td>
+        </tr>
+        <br><br>
           <input type="submit" value="Submit">
       
         </form>
