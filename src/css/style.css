@@ -1,0 +1,115 @@
+body{
+    background-color: lightcyan;
+    font-family: Segoe UI;
+    width: 1100px;
+}
+header {
+    background-color:#F5D520 ;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 2%;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+ul{
+    list-style-type: none;
+}
+section.s1{
+    background-color: #0DA4A8;
+    color: #ffffff;
+    padding: 2%;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+section.s2{
+    background-color: #A8167A;
+    color: #ffffff;
+    padding: 2%;
+    font-size: 16pt;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+section.s3{
+    background-color: #60F034;
+    color: #ffffff;
+    padding: 2%;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+section.s4{
+    background-color: #B752F0;
+    color: #ffffff;
+    padding: 2%;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+section.s5{
+    background-color: #d32f2f;
+    color: #ffffff;
+    padding: 2%;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+ul.stars{
+    height:"40px";
+    width:"200";
+}
+
+.center{
+    text-align: center;
+}
+.buttons {
+    font-weight: 700;
+    background-color: #45a049;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    transition: 0.2s;
+    color: white;
+  } 
+  .list1a {
+    margin: 20px 0 0;
+    padding:0;
+    list-style: none;
+    counter-reset: li;
+}
+.list1a li {
+    border: 2px solid #626669;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 16px 10px;
+}
+.division{
+    margin-left: 10%;
+  }
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+
+
