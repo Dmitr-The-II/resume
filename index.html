@@ -95,8 +95,9 @@
           <input type="text" id="name" name="fullname" placeholder="Your name.." required>
       
           <label for="email">Email Address</label>
-          <input type="text" id="email" name="email" placeholder="Your last name.." required>
-      
+          <!-- <input type="text" id="email" name="email" placeholder="Your last name.." required> -->
+          <input type="text" class="email" placeholder="E-mail">
+          <span class="error"></span>
           <label for="address">Physical Address</label>
           <input type="text" id="address" name="address" placeholder="Your Physical Address.." required>
 
@@ -108,11 +109,12 @@
             <option value="Calgary">Calgary</option>
           </select>
 
-          <label for="postal_code">Email Address</label>
+          <label for="postal_code">Postal Code</label>
           <input type="text" id="postal_code" name="postal_code" placeholder="Your postal code.." required>
 
-          <label for="date">Email Address</label>
+          <label for="date">Date</label>
           <input type="date" id="date" name="date" placeholder="Date.." required>
+          <br>
 
           <label for="subject">Subject</label>
           <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
