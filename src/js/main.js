@@ -18,17 +18,14 @@ function postalFilter (postalCode) {
     }
     return null;
 }
-function getValue(radio) {
+function getValue(val) {
     debugger;
-    if (radio.value == "Hiring") {
-      document.querySelector("#trHourlyRate").style.visibility = "visible";
+    if (val.value == "Hiring") {
+      document.querySelector("#hourlyRate").style.visibility = "visible";
     }
   }
-  function hideValue(val) {
-    if (val.value == "Question") {
-      document.querySelector("#trHourlyRate").style.visibility = "hidden";
-    }
-    if (val.value == "Comment") {
-      document.querySelector("#trHourlyRate").style.visibility = "hidden";
-    }
-  }
+//   function getValue(msg) {
+//     var errMessage = document.querySelector('#hourlyRate');
+//     errMessage.classList.remove('hidden');
+//     errMessage.innerHTML = msg;
+// }
